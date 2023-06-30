@@ -1,0 +1,274 @@
+.header {
+  padding-top: 2.5rem;
+}
+
+.background {
+  max-width: 75%;
+  position: absolute;
+  z-index: -1;
+  top: -50px;
+  right: -180px;
+  filter: brightness(0.5);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-top: -60px;
+}
+
+.header__menu {
+  font-size: 2rem;
+}
+
+.header__menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-left: 50px;
+  font-weight: 600;
+}
+
+.header__menu-item:first-child {
+  margin-left: auto;
+  font-size: 2rem;
+  display: flex;
+  margin-top: 6px;
+}
+
+.header__menu-item {
+  margin-left: 7.5rem;
+}
+
+.header__menu-link {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #383838;
+  transition: color 0.25s linear, border 0.25s linear;
+  margin-left: 5px;
+}
+
+.header__menu-link:hover {
+  color: #ffc87a;
+}
+
+hr {
+  width: 32px;
+  color: #ffc87a;
+  margin-left: 50px;
+}
+
+.header__menu span {
+  font-size: 1.5rem;
+  margin-left: 5px;
+  padding-bottom: 4px;
+  color: #ffc87a;
+}
+
+.header__menu-link-white {
+  font-size: 1.2rem;
+  color: white;
+  transition: color 0.25s linear, border 0.25s linear;
+}
+
+.logo {
+  font-size: 2rem;
+  max-width: 100%;
+  border: #f2f1f6 solid 2px;
+  width: 160px;
+  height: 160px;
+  background-color: #b69f85;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin-left: 10px;
+}
+
+.header__menu-item__pagination {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-left: 75px;
+}
+
+.pagination-item--direction .pagination-item__icon {
+  color: #b69f85;
+  margin-top: 20px;
+}
+
+.short__menu img {
+  margin: -15px 0 15px 8px;
+}
+
+.pagination-item--acctive {
+  font-size: 3rem;
+  max-width: 100%;
+  border: #f2f1f6 solid 2px;
+  box-shadow: 0 12px 20px #999;
+  width: 63px;
+  height: 63px;
+  background-color: white;
+  border-radius: 50%;
+  font-weight: 600;
+  padding: 10px 0px 10px 12px;
+  margin: 0px 10px 30px -12px;
+}
+
+.pagination-item--acctive a {
+  color: #000;
+}
+
+.pagination-item {
+  margin: 10px 0 0 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.pagination-item__link,
+.pagination-item a {
+  color: #000;
+}
+
+.pagination-item__icon {
+  font-size: 3.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 180px;
+}
+
+.header__pagination {
+  display: flex;
+}
+
+.header__tilte {
+  margin-left: 165px;
+  margin-top: 10%;
+}
+
+.header__trademark {
+  display: flex;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.header__trademark-item {
+  margin-left: 30px;
+}
+
+.header__Gear {
+  display: flex;
+  margin: 40px 0 0 34px;
+}
+
+.header__Gear a {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #b69f85;
+  margin-left: 10px;
+}
+
+.header__Gear .header__Gear-left {
+  color: #b69f85;
+  font-size: 2.5rem;
+  margin-left: 5px;
+}
+
+.header__Gear .header__Gear-item {
+  margin-top: 8px;
+  justify-content: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+
+  .background {
+    max-width: 100%;
+    position: static;
+    margin-bottom: 2rem;
+  }
+
+  .header__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+
+  .header__menu-list {
+    margin: 20px 80px;
+    justify-content: space-between;
+  }
+
+  .header__menu-item {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .header__menu-link {
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+
+  .header__menu-item:first-child {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .logo {
+    margin-top: 20px;
+    margin-left: 0;
+    font-size: 2rem;
+    max-width: 100%;
+    border: #f2f1f6 solid 2px;
+    width: 80px;
+    height: 80px;
+    background-color: #b69f85;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
+
+  .header__menu-item__pagination {
+    margin-left: 0;
+  }
+
+  .short__menu img {
+    margin: -15px 0 15px 0;
+  }
+
+  .pagination-item--acctive {
+    margin: 0 10px 30px 0;
+  }
+
+  .header__pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header__tilte {
+    margin-left: 0;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .header__trademark {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 3rem;
+  }
+
+  .header__trademark-item {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .header__Gear {
+    margin: 20px 0 0 0;
+    justify-content: center;
+  }
+}

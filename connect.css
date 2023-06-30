@@ -1,0 +1,34 @@
+.connect {
+  text-align: center;
+  width: 70%;
+}
+
+.connect__list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-top: 78%;
+  margin-left: 50px;
+}
+
+.connect__item {
+  width: calc(25% - 22.5px);
+}
+
+@media (max-width: 767px) {
+  .connect {
+    width: 100%;
+  }
+
+  .connect__list {
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .connect__item {
+    width: 50%;
+  }
+}
